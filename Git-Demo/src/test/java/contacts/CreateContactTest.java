@@ -26,6 +26,8 @@ public class CreateContactTest {
 	@Test
 	public void create() throws IOException {
 
+		
+		//Modified Script
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		wu.waitForPageToLoad(driver);
