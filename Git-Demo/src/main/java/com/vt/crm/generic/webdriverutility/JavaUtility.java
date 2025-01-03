@@ -48,4 +48,16 @@ public class JavaUtility {
 	
 	}
 	
+	//To Generate the Random Mobile Number
+	public StringBuilder getRandomPhoneNumber() {
+		Random random = new Random();
+		int firstdigit = random.nextInt(4) + 6;
+		StringBuilder mobilenumber = new StringBuilder();
+		mobilenumber.append(firstdigit);
+		for(int i=0;i<9;i++) {
+			mobilenumber.append(random.nextInt(10));
+		}
+		return mobilenumber;
+	}
+	
 }
